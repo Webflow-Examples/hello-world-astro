@@ -8,6 +8,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   base: "CLOUD_MOUNT_PATH",
   output: "server",
+  compressHTML: true,
   adapter: cloudflare({
     platformProxy: {
       enabled: true
